@@ -49,12 +49,313 @@ cmake_ninja_workdir = C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/cm
 
 build cmake_object_order_depends_target_Dungeon_Crawler: phony || .
 
-build CMakeFiles/Dungeon_Crawler.dir/main.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/main.cpp || cmake_object_order_depends_target_Dungeon_Crawler
-  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\main.cpp.obj.d
+build CMakeFiles/Dungeon_Crawler.dir/src/main.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/main.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\main.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
   OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
-  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src
+
+build CMakeFiles/Dungeon_Crawler.dir/src/core/GameApp.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/core/GameApp.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\core\GameApp.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\core
+
+build CMakeFiles/Dungeon_Crawler.dir/src/core/Game.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/core/Game.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\core\Game.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\core
+
+build CMakeFiles/Dungeon_Crawler.dir/src/entities/Player.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/entities/Player.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\entities\Player.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\entities
+
+build CMakeFiles/Dungeon_Crawler.dir/src/entities/Enemy.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/entities/Enemy.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\entities\Enemy.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\entities
+
+build CMakeFiles/Dungeon_Crawler.dir/src/entities/BossEnemy.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/entities/BossEnemy.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\entities\BossEnemy.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\entities
+
+build CMakeFiles/Dungeon_Crawler.dir/src/entities/Projectile.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/entities/Projectile.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\entities\Projectile.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\entities
+
+build CMakeFiles/Dungeon_Crawler.dir/src/items/Item.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/items/Item.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\items\Item.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\items
+
+build CMakeFiles/Dungeon_Crawler.dir/src/items/Weapon.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/items/Weapon.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\items\Weapon.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\items
+
+build CMakeFiles/Dungeon_Crawler.dir/src/items/Armor.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/items/Armor.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\items\Armor.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\items
+
+build CMakeFiles/Dungeon_Crawler.dir/src/items/Consumable.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/items/Consumable.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\items\Consumable.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\items
+
+build CMakeFiles/Dungeon_Crawler.dir/src/items/KeyItem.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/items/KeyItem.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\items\KeyItem.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\items
+
+build CMakeFiles/Dungeon_Crawler.dir/src/items/MagicItem.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/items/MagicItem.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\items\MagicItem.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\items
+
+build CMakeFiles/Dungeon_Crawler.dir/src/items/Inventory.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/items/Inventory.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\items\Inventory.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\items
+
+build CMakeFiles/Dungeon_Crawler.dir/src/items/Hotbar.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/items/Hotbar.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\items\Hotbar.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\items
+
+build CMakeFiles/Dungeon_Crawler.dir/src/items/ItemInstance.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/items/ItemInstance.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\items\ItemInstance.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\items
+
+build CMakeFiles/Dungeon_Crawler.dir/src/world/TileMap.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/world/TileMap.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\world\TileMap.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\world
+
+build CMakeFiles/Dungeon_Crawler.dir/src/world/Room.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/world/Room.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\world\Room.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\world
+
+build CMakeFiles/Dungeon_Crawler.dir/src/world/DungeonLayout.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/world/DungeonLayout.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\world\DungeonLayout.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\world
+
+build CMakeFiles/Dungeon_Crawler.dir/src/world/ProceduralGenerator.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/world/ProceduralGenerator.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\world\ProceduralGenerator.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\world
+
+build CMakeFiles/Dungeon_Crawler.dir/src/systems/WorldSystem.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/systems/WorldSystem.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\systems\WorldSystem.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\systems
+
+build CMakeFiles/Dungeon_Crawler.dir/src/systems/PlayerSystem.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/systems/PlayerSystem.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\systems\PlayerSystem.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\systems
+
+build CMakeFiles/Dungeon_Crawler.dir/src/systems/EnemySystem.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/systems/EnemySystem.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\systems\EnemySystem.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\systems
+
+build CMakeFiles/Dungeon_Crawler.dir/src/systems/CombatSystem.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/systems/CombatSystem.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\systems\CombatSystem.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\systems
+
+build CMakeFiles/Dungeon_Crawler.dir/src/systems/ItemSystem.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/systems/ItemSystem.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\systems\ItemSystem.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\systems
+
+build CMakeFiles/Dungeon_Crawler.dir/src/systems/UISystem.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/systems/UISystem.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\systems\UISystem.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\systems
+
+build CMakeFiles/Dungeon_Crawler.dir/src/systems/AudioSystem.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/systems/AudioSystem.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\systems\AudioSystem.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\systems
+
+build CMakeFiles/Dungeon_Crawler.dir/src/systems/SaveSystem.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/systems/SaveSystem.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\systems\SaveSystem.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\systems
+
+build CMakeFiles/Dungeon_Crawler.dir/src/ui/UIElement.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/ui/UIElement.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\ui\UIElement.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\ui
+
+build CMakeFiles/Dungeon_Crawler.dir/src/ui/HealthBar.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/ui/HealthBar.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\ui\HealthBar.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\ui
+
+build CMakeFiles/Dungeon_Crawler.dir/src/ui/ManaBar.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/ui/ManaBar.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\ui\ManaBar.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\ui
+
+build CMakeFiles/Dungeon_Crawler.dir/src/ui/HotbarUI.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/ui/HotbarUI.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\ui\HotbarUI.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\ui
+
+build CMakeFiles/Dungeon_Crawler.dir/src/ui/InventoryUI.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/ui/InventoryUI.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\ui\InventoryUI.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\ui
+
+build CMakeFiles/Dungeon_Crawler.dir/src/ui/MenuUI.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/ui/MenuUI.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\ui\MenuUI.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\ui
+
+build CMakeFiles/Dungeon_Crawler.dir/src/ui/MainMenuUI.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/ui/MainMenuUI.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\ui\MainMenuUI.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\ui
+
+build CMakeFiles/Dungeon_Crawler.dir/src/ui/PauseMenuUI.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/ui/PauseMenuUI.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\ui\PauseMenuUI.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\ui
+
+build CMakeFiles/Dungeon_Crawler.dir/src/ui/DeathScreenUI.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/ui/DeathScreenUI.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\ui\DeathScreenUI.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\ui
+
+build CMakeFiles/Dungeon_Crawler.dir/src/ui/TextRenderer.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/ui/TextRenderer.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\ui\TextRenderer.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\ui
+
+build CMakeFiles/Dungeon_Crawler.dir/src/audio/MusicPlayer.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/audio/MusicPlayer.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\audio\MusicPlayer.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\audio
+
+build CMakeFiles/Dungeon_Crawler.dir/src/audio/SoundEffectPlayer.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/audio/SoundEffectPlayer.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\audio\SoundEffectPlayer.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\audio
+
+build CMakeFiles/Dungeon_Crawler.dir/src/save/SaveFile.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/save/SaveFile.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\save\SaveFile.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\save
+
+build CMakeFiles/Dungeon_Crawler.dir/src/save/Serializer.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/save/Serializer.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\save\Serializer.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\save
+
+build CMakeFiles/Dungeon_Crawler.dir/src/utils/Hitbox.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/utils/Hitbox.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\utils\Hitbox.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\utils
+
+build CMakeFiles/Dungeon_Crawler.dir/src/utils/DamageCalculator.cpp.obj: CXX_COMPILER__Dungeon_Crawler_unscanned_Debug C$:/Users/maxhe/Programming$ Portfolio/Dungeon$ Crawler/src/utils/DamageCalculator.cpp || cmake_object_order_depends_target_Dungeon_Crawler
+  DEP_FILE = CMakeFiles\Dungeon_Crawler.dir\src\utils\DamageCalculator.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Libraries/SFML-2.6.2/include
+  OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
+  OBJECT_FILE_DIR = CMakeFiles\Dungeon_Crawler.dir\src\utils
 
 
 # =============================================================================
@@ -64,7 +365,7 @@ build CMakeFiles/Dungeon_Crawler.dir/main.cpp.obj: CXX_COMPILER__Dungeon_Crawler
 #############################################
 # Link the executable Dungeon_Crawler.exe
 
-build Dungeon_Crawler.exe: CXX_EXECUTABLE_LINKER__Dungeon_Crawler_Debug CMakeFiles/Dungeon_Crawler.dir/main.cpp.obj | C$:/Libraries/SFML-2.6.2/lib/libsfml-graphics-d.a C$:/Libraries/SFML-2.6.2/lib/libsfml-window-d.a C$:/Libraries/SFML-2.6.2/lib/libsfml-system-d.a
+build Dungeon_Crawler.exe: CXX_EXECUTABLE_LINKER__Dungeon_Crawler_Debug CMakeFiles/Dungeon_Crawler.dir/src/main.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/core/GameApp.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/core/Game.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/entities/Player.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/entities/Enemy.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/entities/BossEnemy.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/entities/Projectile.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/items/Item.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/items/Weapon.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/items/Armor.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/items/Consumable.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/items/KeyItem.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/items/MagicItem.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/items/Inventory.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/items/Hotbar.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/items/ItemInstance.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/world/TileMap.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/world/Room.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/world/DungeonLayout.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/world/ProceduralGenerator.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/systems/WorldSystem.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/systems/PlayerSystem.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/systems/EnemySystem.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/systems/CombatSystem.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/systems/ItemSystem.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/systems/UISystem.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/systems/AudioSystem.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/systems/SaveSystem.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/ui/UIElement.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/ui/HealthBar.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/ui/ManaBar.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/ui/HotbarUI.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/ui/InventoryUI.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/ui/MenuUI.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/ui/MainMenuUI.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/ui/PauseMenuUI.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/ui/DeathScreenUI.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/ui/TextRenderer.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/audio/MusicPlayer.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/audio/SoundEffectPlayer.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/save/SaveFile.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/save/Serializer.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/utils/Hitbox.cpp.obj CMakeFiles/Dungeon_Crawler.dir/src/utils/DamageCalculator.cpp.obj | C$:/Libraries/SFML-2.6.2/lib/libsfml-graphics-d.a C$:/Libraries/SFML-2.6.2/lib/libsfml-window-d.a C$:/Libraries/SFML-2.6.2/lib/libsfml-system-d.a
   FLAGS = -g
   LINK_LIBRARIES = C:/Libraries/SFML-2.6.2/lib/libsfml-graphics-d.a  C:/Libraries/SFML-2.6.2/lib/libsfml-window-d.a  C:/Libraries/SFML-2.6.2/lib/libsfml-system-d.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Dungeon_Crawler.dir
