@@ -1,0 +1,3 @@
+C:/Users/maxhe/Programming Portfolio/Dungeon Crawler/cmake-build-debug/CMakeFiles/Dungeon_Crawler.dir
+C:/Users/maxhe/Programming Portfolio/Dungeon Crawler/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/maxhe/Programming Portfolio/Dungeon Crawler/cmake-build-debug/CMakeFiles/rebuild_cache.dir
