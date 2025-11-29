@@ -12,5 +12,15 @@
 #include "../systems/UISystem.h"
 #include "../systems/AudioSystem.h"
 #include "../systems/SaveSystem.h"
+#include <SFML/Graphics.hpp>
 
+class Game {
+    private:
+
+    public:
+    void init();
+    void update(float dt);
+    void render(sf::RenderWindow& window);
+
+};
 #endif //GAME_H

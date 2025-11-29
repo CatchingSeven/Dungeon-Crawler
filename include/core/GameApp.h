@@ -5,6 +5,18 @@
 #ifndef GAMEAPP_H
 #define GAMEAPP_H
 #include "Game.h"
+#include <SFML/Window.hpp>
+#include <SFML/Graphics.hpp>
+
+
+class GameApp {
+    private:
+    sf::RenderWindow window;
+    Game game;
+    public:
+    void run();
+};
+
 
 
 #endif //GAMEAPP_H
