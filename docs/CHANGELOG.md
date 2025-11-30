@@ -16,3 +16,7 @@
 ## v0.1.3 Player Movement Object display
 - added declarations and defintions to player, entity, and PlayerSystem. Essentially, entity is a base class which all entities(Player, enemies, items) derive their fundamental features from(Postion, sprite etc). The first derived class from this has been defined.
 - Player now appears on the screen, you can move the sprite around and it has bounds checking. This actually marks the end of phase 1.
+
+## v0.1.4 added stats definition
+- stats was changed to a struct
+- defined stats value in player constructor as proof of concept, speed is the only one used atm

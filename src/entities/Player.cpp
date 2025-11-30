@@ -8,6 +8,14 @@ Player::Player() {
     this->position = {0, 0};
     texture.loadFromFile("../assets/Missing_Texture.png");
     sprite.setTexture(texture);
+    /* proof of concept, doesnt do anything rn, except for speed */
+    stats.HP = 100;
+    stats.MaxHP = stats.HP;
+    stats.attack = 10;
+    stats.defense = 10;
+    stats.speed = 1000;
+    stats.mana = 100;
+
 
 
 
@@ -19,7 +27,8 @@ Player::~Player() {
 }
 
 void Player::update(float dt, sf::Vector2f screenSize) {
-    float speed = 1000.f; // temp speed
+    float speed = (float)stats.speed;
+    std::cout << speed << std::endl;
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)||sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
         position.y -= speed * dt;
         if (position.y <= 0) position.y += speed * dt;

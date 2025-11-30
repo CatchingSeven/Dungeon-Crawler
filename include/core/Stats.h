@@ -4,8 +4,7 @@
 
 #ifndef STATS_H
 #define STATS_H
-class Stats {
-    private:
+struct Stats {
     int HP;
     int MaxHP;
     int attack;
