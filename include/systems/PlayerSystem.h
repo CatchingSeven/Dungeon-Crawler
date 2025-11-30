@@ -6,6 +6,17 @@
 #define PLAYERSYSTEM_H
 #include "../entities/Player.h"
 #include "../world/DungeonLayout.h"
+#
+
+class PlayerSystem {
+private:
+    Player player;
+    public:
+    void updatePlayer(float dt, sf::Vector2f screenSize);
+    void renderPlayer(sf::RenderWindow &window);
+
+
+};
 
 
 #endif //PLAYERSYSTEM_H

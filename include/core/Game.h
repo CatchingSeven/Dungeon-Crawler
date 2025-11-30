@@ -12,5 +12,16 @@
 #include "../systems/UISystem.h"
 #include "../systems/AudioSystem.h"
 #include "../systems/SaveSystem.h"
+#include <SFML/Graphics.hpp>
 
+class Game {
+    private:
+    PlayerSystem playerSystem;
+
+    public:
+    void init();
+    void update(float dt, sf::Vector2f screenSize);
+    void render(sf::RenderWindow& window);
+
+};
 #endif //GAME_H

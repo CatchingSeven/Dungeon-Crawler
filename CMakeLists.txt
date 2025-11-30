@@ -14,6 +14,7 @@ add_executable(Dungeon_Crawler
 
 
         # entities
+        src/entities/Entity.cpp
         src/entities/Player.cpp
         src/entities/Enemy.cpp
         src/entities/BossEnemy.cpp
@@ -70,6 +71,7 @@ add_executable(Dungeon_Crawler
         # utils
         src/utils/Hitbox.cpp
         src/utils/DamageCalculator.cpp
+
 )
 
 target_link_libraries(Dungeon_Crawler sfml-graphics sfml-window sfml-system)

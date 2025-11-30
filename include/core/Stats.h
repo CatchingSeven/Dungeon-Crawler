@@ -4,5 +4,12 @@
 
 #ifndef STATS_H
 #define STATS_H
-
+struct Stats {
+    int HP;
+    int MaxHP;
+    int attack;
+    int defense;
+    int speed;
+    int mana;
+};
 #endif //STATS_H
