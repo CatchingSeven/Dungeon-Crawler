@@ -16,10 +16,11 @@
 
 class Game {
     private:
+    PlayerSystem playerSystem;
 
     public:
     void init();
-    void update(float dt);
+    void update(float dt, sf::Vector2f screenSize);
     void render(sf::RenderWindow& window);
 
 };

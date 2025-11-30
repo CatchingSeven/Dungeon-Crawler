@@ -13,6 +13,7 @@ class GameApp {
     private:
     sf::RenderWindow window;
     Game game;
+    sf::Vector2f screenSize;
     public:
     void run();
 };

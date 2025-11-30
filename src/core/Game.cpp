@@ -6,13 +6,16 @@
 #include <iostream>
 
 
-void Game::update(float dt) {
-    std::cout << dt;
+void Game::update(float dt, sf::Vector2f screenSize) {
+    playerSystem.updatePlayer(dt, screenSize);
+
 
 
 }
 
 void Game::render(sf::RenderWindow &window) {
-    window.clear(sf::Color::White);
+    window.clear();
+
+    playerSystem.renderPlayer(window);
 
 }

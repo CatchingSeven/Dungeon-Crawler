@@ -12,3 +12,7 @@
 - Basic defintions added to GameApp and game, game has render, update and init, none are actually properly defined, they're just they as proof of concepts for now
 - GameApp has two objects declared as private class level variables Game(To call game methods), and RenderWindow. It also has one method run, which is used to launch the game loop.
 - The loop now runs window shows up can close it, all that good stuff.
+
+## v0.1.3 Player Movement Object display
+- added declarations and defintions to player, entity, and PlayerSystem. Essentially, entity is a base class which all entities(Player, enemies, items) derive their fundamental features from(Postion, sprite etc). The first derived class from this has been defined.
+- Player now appears on the screen, you can move the sprite around and it has bounds checking. This actually marks the end of phase 1.

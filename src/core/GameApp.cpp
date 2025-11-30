@@ -4,9 +4,26 @@
 
 #include "../../include/core/GameApp.h"
 
+#include <iostream>
+
 void GameApp::run() {
-    window.create(sf::VideoMode(800, 600), "Dungeon Crawler v0.1.2");
+
+    /* Temp dev tools */
+    window.create(sf::VideoMode(1920, 1080), "Dungeon Crawler v0.1.2");
     sf::Clock clock;
+    sf::Time dt = clock.getElapsedTime();
+    sf::Text fps;
+    sf::Font font;
+    if (!font.loadFromFile("../assets/fonts/DejaVuSans.ttf")) {
+        std::cerr << "Failed to load font" << std::endl;
+    }
+    font.loadFromFile("../assets/fonts/DejaVuSans.ttf");
+    fps.setFont(font);
+    fps.setCharacterSize(40);
+    fps.setColor(sf::Color::Red);
+    fps.setPosition(10.f, 10.f);
+    fps.setString("FPS");
+    screenSize =  sf::Vector2f(window.getSize());
 
     while (window.isOpen()) {
         sf::Event event;
@@ -14,9 +31,27 @@ void GameApp::run() {
             if (event.type == sf::Event::Closed)
                 window.close();
         }
+
+
+
+
+
+
+
         float dt = clock.restart().asSeconds();
-        game.update(dt);
-        window.clear(sf::Color::White);
+
+        float currentFPS = 1.f / dt;
+
+
+
+
+
+
+        fps.setString("FPS: " + std::to_string(currentFPS));
+
+        game.update(dt, screenSize);
+        window.clear();
+        window.draw(fps);
         game.render(window);
         window.display();
     }
