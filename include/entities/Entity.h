@@ -23,7 +23,7 @@ public:
         return position;
     }
     // Remember: Virtual is used to state "If child has own defintion of this method, use that method, and it is equal to zero to force the derived class to define its own method.
-    virtual void update(float dt, sf::Vector2f screenSize) = 0;
+    virtual void update(float dt, sf::Vector2f screenSize) = 0;// each derived class MUST declare and define it's own update and render. this is how we enforce it.
     virtual void render(sf::RenderWindow& window) = 0;
 
 };
