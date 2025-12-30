@@ -17,6 +17,7 @@
 class Game {
     private:
     PlayerSystem playerSystem;
+    WorldSystem worldSystem;
 
     public:
     void init();

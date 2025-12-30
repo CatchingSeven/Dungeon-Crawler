@@ -5,7 +5,9 @@
 
 #include <iostream>
 
-
+void Game::init() {
+    //worldSystem.loadRoom();
+}
 void Game::update(float dt, sf::Vector2f screenSize) {
     playerSystem.updatePlayer(dt, screenSize);
 
@@ -15,6 +17,7 @@ void Game::update(float dt, sf::Vector2f screenSize) {
 
 void Game::render(sf::RenderWindow &window) {
     window.clear();
+    //worldSystem.renderWorld(window);
 
     playerSystem.renderPlayer(window);
 

@@ -71,6 +71,8 @@ add_executable(Dungeon_Crawler
         # utils
         src/utils/Hitbox.cpp
         src/utils/DamageCalculator.cpp
+        include/enums/RoomState.h
+        include/enums/TileType.h
 
 )
 

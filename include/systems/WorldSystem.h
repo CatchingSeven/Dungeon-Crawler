@@ -11,5 +11,11 @@ class Player;
 class WorldSystem {
 private:
     Player* player;
+    Room room;
+public:
+    void loadRoom();
+    void updateWorld(float dt, sf::Vector2f screenSize);
+    void renderWorld(sf::RenderWindow &window);
+
 };
 #endif //WORLDSYSTEM_H

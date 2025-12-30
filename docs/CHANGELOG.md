@@ -20,3 +20,6 @@
 ## v0.1.4 added stats definition
 - stats was changed to a struct
 - defined stats value in player constructor as proof of concept, speed is the only one used atm
+
+## v0.2.1 Added TileMap rendering
+- Tilemaps can now be loaded using a map and a texture.
