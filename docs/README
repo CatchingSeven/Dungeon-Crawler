@@ -21,15 +21,16 @@ the MSYS2 SFML 3 package cannot replace it. SFML DLLs are copied beside the game
 keep UCRT64 bin on PATH for the compiler and FreeType runtime dependencies.
 Player assets resolve from the project's assets directory regardless of the
 launch working directory. If sprites/player.png is absent, the player uses the
-checked-in Missing_Texture.png placeholder. Some referenced game assets are
-not yet included in the repository; the unfinished world renderer is disabled.
+checked-in Missing_Texture.png placeholder. The world renderer is still disabled
+in the game loop. The recovered MagicLand.tmx experiment references
+magiclanddizzy_tiles.gif, which was missing from the original archive.
 
 In CLion, reload CMake presets and select MSYS2 UCRT64 Debug or Release.
 If CLion overrides the preset tools, set its MinGW toolchain location to
 C:\msys64\ucrt64, CMake to C:\msys64\ucrt64\bin\cmake.exe, and the build tool
 to C:\msys64\ucrt64\bin\ninja.exe.
-Do not reuse cmake-build-debug: its checked-in cache refers to an old project
-location and the bundled CLion compiler. The presets use separate build folders.
+The presets use fresh build folders. The legacy cmake-build-debug cache was
+created for an old project location and the bundled CLion compiler.
 
 For another MSYS2 location, create a local CMakeUserPresets.json that inherits
 one of these presets and overrides MSYS2_UCRT64_ROOT and the PATH environment.
