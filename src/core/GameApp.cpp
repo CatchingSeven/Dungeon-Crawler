@@ -17,9 +17,6 @@ void GameApp::run() {
     game.init();
 
     
-    if (!map.load("../assets/MagicLand.tmx"))
-
-
     while (window.isOpen()) {
         sf::Event event;
         while (window.pollEvent(event)) {

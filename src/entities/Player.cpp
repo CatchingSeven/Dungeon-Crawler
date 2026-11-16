@@ -2,11 +2,22 @@
 // Created by maxhe on 11/29/2025.
 //
 #include "../../include/entities/Player.h"
+#include <filesystem>
 #include <iostream>
+#include <stdexcept>
 
 Player::Player() {
     this->position = {0, 0};
-    texture.loadFromFile("../assets/sprites/player.png");
+    const std::filesystem::path assetDirectory(DUNGEON_ASSET_DIR);
+    const auto playerTexture = assetDirectory / "sprites/player.png";
+    const auto fallbackTexture = assetDirectory / "Missing_Texture.png";
+    if (!std::filesystem::exists(playerTexture) || !texture.loadFromFile(playerTexture.string())) {
+        std::cerr << "Player texture unavailable: " << playerTexture
+                  << ". Using " << fallbackTexture << '\n';
+        if (!texture.loadFromFile(fallbackTexture.string())) {
+            throw std::runtime_error("Could not load the player texture or its fallback");
+        }
+    }
     sprite.setTexture(texture);
     /* proof of concept, doesnt do anything rn, except for speed */
     stats.HP = 100;
