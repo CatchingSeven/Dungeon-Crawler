@@ -6,8 +6,8 @@ int ProceduralGenerator::randomNumber(int min, int max) {
     return rand() % (max - min) + min;
 }
 
-void ProceduralGenerator::generateGenericRoom(int width, int height, int* level) {
-    int min = 25, max = 40;
+void ProceduralGenerator::generateGenericRoom(int width, int height, std::vector<int>& level) {
+    
     for (int y = 0; y < height; y++) {
 
         for (int x = 0; x < width; x++) {

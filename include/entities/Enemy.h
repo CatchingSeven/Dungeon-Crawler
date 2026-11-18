@@ -16,7 +16,7 @@ private:
 public:
     Enemy();
     ~Enemy() = default;
-    void update(float dt, sf::Vector2f screenSize) override;
+    void update(float dt, sf::Vector2f screenSize, const Room &room) override;
     void render(sf::RenderWindow& window) override;
 };
 #endif //ENEMY_H

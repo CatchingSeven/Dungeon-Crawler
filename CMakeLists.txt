@@ -94,6 +94,7 @@ add_executable(Dungeon_Crawler
 
 )
 
+target_include_directories(Dungeon_Crawler PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/include")
 target_link_libraries(Dungeon_Crawler sfml-graphics sfml-window sfml-system)
 target_compile_definitions(Dungeon_Crawler PRIVATE
     DUNGEON_ASSET_DIR="${CMAKE_CURRENT_SOURCE_DIR}/assets"

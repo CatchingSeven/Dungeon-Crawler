@@ -32,6 +32,13 @@ to C:\msys64\ucrt64\bin\ninja.exe.
 The presets use fresh build folders. The legacy cmake-build-debug cache was
 created for an old project location and the bundled CLion compiler.
 
+In VS Code, use the C/C++ and CMake Tools extensions, then run
+"CMake: Select Configure Preset" and choose "MSYS2 UCRT64 Debug" (or Release).
+Run "CMake: Configure" after switching presets. The workspace C/C++ configuration
+uses CMake Tools and the generated compile_commands.json so IntelliSense sees
+the same GCC, include paths, SFML 2 headers, and defines as the actual build.
+Do not add C:\msys64\ucrt64\include for SFML: that installation contains SFML 3.
+
 For another MSYS2 location, create a local CMakeUserPresets.json that inherits
 one of these presets and overrides MSYS2_UCRT64_ROOT and the PATH environment.
 An existing SFML 2.6 installation built with the same toolchain can be used with

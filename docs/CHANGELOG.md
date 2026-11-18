@@ -23,3 +23,16 @@
 
 ## v0.2.1 Added TileMap rendering
 - Tilemaps can now be loaded using a map and a texture.
+
+## v0.2.14 Added Rooms
+- Implemented handcrafted room loading from CSV files
+
+- Added tile properties and walkability lookup
+
+- Implemented filesystem-based room discovery and registration
+
+- Implemented DungeonLayout room storage and lookup
+
+- Added door definitions and destination coordinates
+
+- Implemented player door detection and room transitions

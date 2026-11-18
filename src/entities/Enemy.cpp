@@ -24,7 +24,7 @@ Enemy::Enemy() {
     stats.mana = 100;
 }
 
-void Enemy::update(float, sf::Vector2f) {
+void Enemy::update(float, sf::Vector2f, const Room &room) {
     sprite.setPosition(position);
 }
 

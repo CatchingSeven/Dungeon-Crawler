@@ -1,11 +1,7 @@
 //
 // Created by maxhe on 11/29/2025.
 //
-#include "../../include/world/TileMap.h"
-
-#include <iostream>
-#include <bits/fs_fwd.h>
-#include <filesystem>
+#include "world/TileMap.h"
 
 
 void TileMap::draw(sf::RenderTarget &target, sf::RenderStates states) const {
@@ -16,7 +12,7 @@ void TileMap::draw(sf::RenderTarget &target, sf::RenderStates states) const {
     target.draw(vertexArray, states);
 }
 
-bool TileMap::load(const std::string &filename, sf::Vector2u tileSize, const int *tiles, unsigned int width, unsigned int height) {
+bool TileMap::load(const std::string &filename, sf::Vector2u tileSize, const std::vector<int>& tiles, unsigned int width, unsigned int height) {
     //load tilset
     if (!tileset.loadFromFile(filename)) {
         return false;
