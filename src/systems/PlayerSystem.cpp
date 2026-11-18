@@ -3,11 +3,13 @@
 //
 #include "../../include/systems/PlayerSystem.h"
 
-void PlayerSystem::updatePlayer(float dt, sf::Vector2f screenSize) {
-   player.update(dt, screenSize);
+const Door* PlayerSystem::updatePlayer(float dt, sf::Vector2f screenSize, const Room &room) {
+   player.update(dt, screenSize, room);
+   return player.walkThroughDoor(room);
 }
 void PlayerSystem::renderPlayer(sf::RenderWindow &window) {
 
 
    player.render(window);
 }
+

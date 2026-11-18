@@ -9,8 +9,14 @@
 #include "../enums/EnemyBehaviorType.h"
 class Player;
 
-class Enemy {
-    private:
-    Player* player;
+class Enemy : public Entity {
+private:
+    Player* player = nullptr;
+
+public:
+    Enemy();
+    ~Enemy() = default;
+    void update(float dt, sf::Vector2f screenSize, const Room &room) override;
+    void render(sf::RenderWindow& window) override;
 };
 #endif //ENEMY_H

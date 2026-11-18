@@ -2,18 +2,33 @@
 // Created by maxhe on 11/29/2025.
 //
 #include "../../include/entities/Player.h"
+#include <filesystem>
 #include <iostream>
+#include <stdexcept>
+#include "../../include/world/Room.h"
+
 
 Player::Player() {
-    this->position = {0, 0};
-    texture.loadFromFile("../assets/Missing_Texture.png");
+    this->position = {160, 160};
+    const std::filesystem::path assetDirectory(DUNGEON_ASSET_DIR);
+    const auto playerTexture = assetDirectory / "sprites/player.png";
+    const auto fallbackTexture = assetDirectory / "Missing_Texture.png";
+    if (!std::filesystem::exists(playerTexture) || !texture.loadFromFile(playerTexture.string())) {
+        std::cerr << "Player texture unavailable: " << playerTexture
+                  << ". Using " << fallbackTexture << '\n';
+        if (!texture.loadFromFile(fallbackTexture.string())) {
+            throw std::runtime_error("Could not load the player texture or its fallback");
+        }
+    }
     sprite.setTexture(texture);
+    
+    sprite.setPosition(position);
     /* proof of concept, doesnt do anything rn, except for speed */
     stats.HP = 100;
     stats.MaxHP = stats.HP;
     stats.attack = 10;
     stats.defense = 10;
-    stats.speed = 1000;
+    stats.speed = 200;
     stats.mana = 100;
 
 
@@ -26,34 +41,55 @@ Player::~Player() {
 
 }
 
-void Player::update(float dt, sf::Vector2f screenSize) {
+
+
+void Player::update(float dt, sf::Vector2f screenSize, const Room &room) {
     float speed = (float)stats.speed;
-    std::cout << speed << std::endl;
+    sf::Vector2f nextPosition = position;
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)||sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
-        position.y -= speed * dt;
-        if (position.y <= 0) position.y += speed * dt;
+        nextPosition.y -= speed * dt;
+        if (nextPosition.y <= 0) nextPosition.y += speed * dt;
     }
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)||sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
-        position.y += speed * dt;
-        if (position.y >= screenSize.y*0.89f) position.y -= speed * dt;
+        nextPosition.y += speed * dt;
+        if (nextPosition.y >= screenSize.y*0.95f) nextPosition.y -= speed * dt;
         // this does work, but the sprite goes a little further off screen than expected
-        std::cout << "ScreenSize: " << screenSize.y << "Current Pos y: " << position.y << std::endl;
+
 
     }
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)||sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
-        position.x -= speed * dt;
-        if (position.x <= 0) position.x += speed * dt;
+        nextPosition.x -= speed * dt;
+        if (nextPosition.x <= 0) nextPosition.x += speed * dt;
     }
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)||sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
-        position.x += speed * dt;
-        if (position.x >= screenSize.x*0.93f) position.x -= speed * dt;
-        std::cout << "ScreenSize: " << screenSize.x << "Current Pos y: " << position.x << std::endl;
+        nextPosition.x += speed * dt;
+        if (nextPosition.x >= screenSize.x*0.95f) nextPosition.x -= speed * dt;
+        
     }
 
+    int tileX = static_cast<int>(nextPosition.x / 64.f);
+    int tileY = static_cast<int>(nextPosition.y / 64.f);
+    
+
+    if (room.isWalkable(tileX, tileY)) {
+    position = nextPosition;
     sprite.setPosition(position);
-
-
+    
 }
+}
+
+
+
+const Door* Player::walkThroughDoor(const Room& room) {
+    int tileX = static_cast<int>(position.x / 64.f);
+    int tileY = static_cast<int>(position.y / 64.f);
+    return room.getDoorAt(tileX, tileY);
+}
+
+    
+
+
+
 
 void Player::render(sf::RenderWindow& window) {
 

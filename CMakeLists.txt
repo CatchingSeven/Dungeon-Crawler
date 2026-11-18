@@ -1,10 +1,28 @@
 cmake_minimum_required(VERSION 3.30)
-project(Dungeon_Crawler)
+project(Dungeon_Crawler LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
-set(SFML_DIR "C:/Libraries/SFML-2.6.2/lib/cmake/SFML")
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
 
-find_package(SFML 2.5 COMPONENTS graphics window system REQUIRED)
+# Build SFML 2 with the same compiler/runtime as the game. MSYS2 currently
+# supplies SFML 3, whose API is incompatible with this codebase.
+option(DUNGEON_USE_SYSTEM_SFML "Use an existing toolchain-compatible SFML 2 installation" OFF)
+if(DUNGEON_USE_SYSTEM_SFML)
+    find_package(SFML 2.6 COMPONENTS graphics window system REQUIRED)
+else()
+    include(FetchContent)
+    set(SFML_BUILD_AUDIO OFF CACHE BOOL "" FORCE)
+    set(SFML_BUILD_NETWORK OFF CACHE BOOL "" FORCE)
+    set(SFML_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
+    set(SFML_BUILD_DOC OFF CACHE BOOL "" FORCE)
+    set(SFML_USE_SYSTEM_DEPS ON CACHE BOOL "" FORCE)
+    FetchContent_Declare(sfml
+        URL https://github.com/SFML/SFML/archive/5383d2b3948f805af55c9f8a4587ac72ec5981d1.tar.gz
+        URL_HASH SHA256=d10569c2b62809ac08fee6e5d7c403aca439eb36586332258c1a1279d0c1a669
+    )
+    FetchContent_MakeAvailable(sfml)
+endif()
 add_executable(Dungeon_Crawler
         src/main.cpp
 
@@ -71,13 +89,22 @@ add_executable(Dungeon_Crawler
         # utils
         src/utils/Hitbox.cpp
         src/utils/DamageCalculator.cpp
+        include/enums/RoomState.h
+        include/enums/TileType.h
 
 )
 
+target_include_directories(Dungeon_Crawler PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/include")
 target_link_libraries(Dungeon_Crawler sfml-graphics sfml-window sfml-system)
+target_compile_definitions(Dungeon_Crawler PRIVATE
+    DUNGEON_ASSET_DIR="${CMAKE_CURRENT_SOURCE_DIR}/assets"
+)
 
-
-
-
-
-
+if(WIN32)
+    add_custom_command(TARGET Dungeon_Crawler POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different
+            $<TARGET_RUNTIME_DLLS:Dungeon_Crawler>
+            $<TARGET_FILE_DIR:Dungeon_Crawler>
+        COMMAND_EXPAND_LISTS
+    )
+endif()

@@ -1,0 +1,12 @@
+# Native Windows builds using MSYS2's UCRT64 environment.
+set(MSYS2_UCRT64_ROOT "C:/msys64/ucrt64" CACHE PATH "MSYS2 UCRT64 installation prefix")
+
+set(CMAKE_C_COMPILER "${MSYS2_UCRT64_ROOT}/bin/gcc.exe")
+set(CMAKE_CXX_COMPILER "${MSYS2_UCRT64_ROOT}/bin/g++.exe")
+set(CMAKE_RC_COMPILER "${MSYS2_UCRT64_ROOT}/bin/windres.exe")
+if(CMAKE_GENERATOR STREQUAL "Ninja")
+    set(CMAKE_MAKE_PROGRAM "${MSYS2_UCRT64_ROOT}/bin/ninja.exe" CACHE FILEPATH "Ninja executable")
+endif()
+
+list(PREPEND CMAKE_PREFIX_PATH "${MSYS2_UCRT64_ROOT}")
+list(APPEND CMAKE_TRY_COMPILE_PLATFORM_VARIABLES MSYS2_UCRT64_ROOT)

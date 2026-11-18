@@ -14,9 +14,12 @@
 #include "../systems/SaveSystem.h"
 #include <SFML/Graphics.hpp>
 
+
+struct RoomID;
 class Game {
     private:
     PlayerSystem playerSystem;
+    WorldSystem worldSystem;
 
     public:
     void init();

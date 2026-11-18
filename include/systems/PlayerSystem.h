@@ -6,14 +6,17 @@
 #define PLAYERSYSTEM_H
 #include "../entities/Player.h"
 #include "../world/DungeonLayout.h"
-#
+#include <optional>
+
+struct Door;
 
 class PlayerSystem {
 private:
     Player player;
     public:
-    void updatePlayer(float dt, sf::Vector2f screenSize);
+    const Door* updatePlayer(float dt, sf::Vector2f screenSize, const Room &room);
     void renderPlayer(sf::RenderWindow &window);
+    
 
 
 };

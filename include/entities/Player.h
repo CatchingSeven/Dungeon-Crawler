@@ -7,6 +7,9 @@
 #include "../entities/Entity.h"
 #include "../core/Stats.h"
 #include "../items/Inventory.h"
+#include <optional>
+
+struct Door;
 class Player : public Entity {
     private:
 
@@ -15,8 +18,10 @@ class Player : public Entity {
 public:
     Player();
     ~Player();
-    void update(float dt, sf::Vector2f screenSize) override;
+    void update(float dt, sf::Vector2f screenSize, const Room &room) override;
     void render(sf::RenderWindow& window) override;
+    const Door* walkThroughDoor(const Room& room);
+    
 
 
 };

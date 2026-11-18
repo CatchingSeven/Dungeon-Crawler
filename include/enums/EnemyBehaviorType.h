@@ -4,5 +4,10 @@
 
 #ifndef ENEMYBEHAVIORTYPE_H
 #define ENEMYBEHAVIORTYPE_H
+enum class EnemyBehaviourType {
+    Hostile,
+    Search,
+    Patrol
+};
 
 #endif //ENEMYBEHAVIORTYPE_H

@@ -20,3 +20,19 @@
 ## v0.1.4 added stats definition
 - stats was changed to a struct
 - defined stats value in player constructor as proof of concept, speed is the only one used atm
+
+## v0.2.1 Added TileMap rendering
+- Tilemaps can now be loaded using a map and a texture.
+
+## v0.2.14 Added Rooms
+- Implemented handcrafted room loading from CSV files
+
+- Added tile properties and walkability lookup
+
+- Implemented filesystem-based room discovery and registration
+
+- Implemented DungeonLayout room storage and lookup
+
+- Added door definitions and destination coordinates
+
+- Implemented player door detection and room transitions

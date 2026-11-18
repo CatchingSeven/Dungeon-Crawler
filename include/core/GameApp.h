@@ -9,6 +9,7 @@
 #include <SFML/Graphics.hpp>
 
 
+
 class GameApp {
     private:
     sf::RenderWindow window;
